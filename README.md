@@ -1,20 +1,18 @@
-# Rust Inflector
-
-
-[![Build Status](https://travis-ci.org/whatisinternet/Inflector.svg?branch=master)](https://travis-ci.org/whatisinternet/Inflector) [![Crates.io](https://img.shields.io/crates/v/Inflector.svg)](https://crates.io/crates/inflector)[![Crate downloads](https://img.shields.io/crates/d/Inflector.svg)](https://crates.io/crates/inflector)
+# Rust (i)nflector
 
 
 Adds String based inflections for Rust. Snake, kebab, train, camel,
 sentence, class, and title cases as well as ordinalize,
 deordinalize, demodulize, deconstantize, foreign key, table case, and pluralize/singularize are supported as both traits and pure functions
 acting on &str and String types.
+forked from: https://github.com/whatisinternet/Inflector
 
 -----
 ## Documentation:
 
 Documentation can be found here at the README or via rust docs below.
 
-[Rust docs with examples](https://docs.rs/Inflector)
+[Rust docs with examples](https://docs.rs/inflector)
 
 -----
 
@@ -24,13 +22,13 @@ Documentation can be found here at the README or via rust docs below.
 
 ```toml
 [dependencies]
-Inflector = "*"
+inflector = "*"
 ```
 
 ### Compile yourself:
 
 1. Install [Rust and cargo](http://doc.crates.io/)
-2. git clone https://github.com/whatisinternet/Inflector
+2. git clone https://github.com/abumni/inflector
 3. Library: cd inflector && cargo build --release --lib
 4. You can find the library in target/release
 
@@ -40,7 +38,7 @@ Inflector = "*"
 ...
 // to use methods like String.to_lower_case();
 extern crate inflector;
-use inflector::Inflector;
+use inflector::inflector;
 ...
 fn main() {
 ...
@@ -113,7 +111,7 @@ If the project doesn't require singularize, pluralize, class, table, demodulize,
 deconstantize. Then in your `cargo.toml` you may wish to specify:
 
 ```toml
-[dependencies.Inflector]
+[dependencies.inflector]
 version = "*"
 default-features = false
 ```
@@ -121,7 +119,7 @@ default-features = false
 Or
 
 ```toml
-Inflector = {version="*", default-features=false}
+inflector = {version="*", default-features=false}
 
 ```
 
