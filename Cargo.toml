@@ -1,6 +1,6 @@
 [package]
 name = "inflector"
-version = "0.11.4"
+version = "0.12.0"
 authors = ["Josh Teeter<joshteeter@gmail.com>", "Abumni <contact@abumni.com>"]
 include = [
   "**/*.rs",
